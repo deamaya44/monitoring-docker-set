@@ -1,3 +1,3 @@
 Dockerfile*
 */data
-alertmanager/alertmanager.yml
+alertmanager/config/alertmanager.yml
