@@ -23,7 +23,7 @@ Para configurar tu entorno de monitoreo, sigue estos pasos:
    ```bash
    cd monitoring-docker-set
    
-3. Ejecuta el script firs-time.sh para configurar los archivos de configuracion necesarios:
+3. Ejecuta el script firs-time.sh para crear los archivos de configuracion necesarios:
 
    ```bash
    chmod +x first-time.sh
