@@ -23,11 +23,17 @@ Para configurar tu entorno de monitoreo, sigue estos pasos:
    ```bash
    cd monitoring-docker-set
    
-3. Ejecuta el script firs-time.sh para configurar y desplegar el entorno de monitoreo en Docker:
+3. Ejecuta el script firs-time.sh para configurar los archivos de configuracion necesarios:
 
-    ```bash
+   ```bash
    chmod +x first-time.sh
    ./first-time.sh
+
+4. Ejecuta el script docker-containers.sh para desplegar el entorno de Monitoreo en Docker:
+
+   ```bash
+   chmod +x docker_containers.sh
+   ./docker_containers.sh 
    
 Este script se encargará de descargar las imágenes de Docker necesarias, configurar los contenedores y poner en funcionamiento tu entorno de monitoreo.
 
