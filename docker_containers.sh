@@ -8,6 +8,9 @@
 #     -v prometheus-data:/prometheus \
 #     prom/prometheus
 
+#Docker network for this lab
+docker network create monitoring
+
 #Prometheus file bind-volume config
 docker run -d \
     -p 9090:9090 \
