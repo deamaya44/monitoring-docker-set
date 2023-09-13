@@ -13,9 +13,12 @@ docker run -d \
     -p 9090:9090 \
     --name prom \
     --network monitoring \
-    -v ./prom/config/prometheus.yml:/etc/prometheus/prometheus.yml \
+    -v $PWD/prom/config:/etc/prometheus \
     -v ./prom/data/prometheus-data:/prometheus \
-    prom/prometheus
+    prom/prometheus \
+    --web.enable-lifecycle  \
+    --config.file=/etc/prometheus/prometheus.yml
+    # -v ./prom/config/prometheus.yml:/etc/prometheus/prometheus.yml \
 
 #Grafana config
 docker run -d \
