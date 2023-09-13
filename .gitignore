@@ -1,3 +1,4 @@
 Dockerfile*
 */data
 alertmanager/config/alertmanager.yml
+node_exporter/
