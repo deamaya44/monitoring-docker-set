@@ -40,5 +40,6 @@ docker run -d \
     -v ./alertmanager/config:/config \
     -v ./alertmanager/data:/data \
     prom/alertmanager \
-    --config.file=/config/alertmanager.yml --log.level=debug
+    --config.file=/config/alertmanager.yml \
+    --log.level=debug
     # --user "$(id -u)" 
